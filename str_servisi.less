@@ -1,0 +1,28 @@
+.diff_services{
+	display: flex;
+	margin-top: 35px;
+	justify-content: space-between;
+		@media (max-width: 680px){
+			flex-direction: @column;
+			}
+}
+
+.diff_serviceitem{
+	width: 30%;
+	@media (max-width: 680px){
+			width: @sirina;
+			}
+	img{
+		width: 85%;
+		margin-bottom: 25px;
+		border-radius: 25%;
+		@media (max-width: 680px){
+			width: 45%;
+			}
+		}
+	h3 {
+		color:@glavnaboja;
+		margin-bottom: @vr20px - 5;
+		font-size: @vr20px + 3;
+		}
+}

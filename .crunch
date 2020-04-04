@@ -1,0 +1,32 @@
+{
+	"files": {
+		"stil.less": {
+			"engines": [
+				{
+					"compiler": "less",
+					"output": "stil.css",
+					"options": {
+						"compress": false,
+						"ieCompat": false,
+						"strictMath": false,
+						"strictUnits": false,
+						"javascriptEnabled": false,
+						"sourceMap": true
+					}
+				}
+			],
+			"sources": [
+				"../../../../Program Files (x86)/Crunch/https:/fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans&display=swap",
+				"footer.less",
+				"navbar.less",
+				"osobine.less",
+				"str_about.less",
+				"str_contactus.less",
+				"str_home.less",
+				"str_ourgames.less",
+				"str_servisi.less",
+				"varijable.less"
+			]
+		}
+	}
+}

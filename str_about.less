@@ -1,0 +1,20 @@
+.borderdug(@boja) when (@boja=@glavnaboja){
+		border: 2px solid @glavnaboja;
+	}
+
+.btn a{
+	display: block;
+	width: 180px;
+	height: 35px;
+    color: @glavnaboja;
+    .borderdug(@glavnaboja);
+	line-height: 35px;
+	margin: 25px auto 0;
+	text-align: @poravnanje;
+	font-size: 18px;
+		&:hover{
+		background-color:@glavnaboja;
+		color: @drugaboja;
+		cursor: default;
+		}
+}

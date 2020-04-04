@@ -1,0 +1,28 @@
+.form_input{
+	margin-bottom: 15px;
+	textarea{
+		&:extend(.form_input input[type="text"] all);
+		height: 80px;
+		resize: @nn;
+	}
+}
+
+.form_input input[type="text"]{
+	width: @sirinaforme;
+	padding: @paddingforme;
+	border:@borderforme;
+	&:hover{
+		background: @bojaforme;
+		border-radius: 5px;
+		}
+}
+
+.form_input input[type="email"]{
+	&:extend(.form_input input[type="text"] all);}
+
+.btnbb a:extend(.btn a all){
+	width: @sirinaforme;
+		&:hover{
+			cursor: @cursor;
+	}
+}

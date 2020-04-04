@@ -1,0 +1,301 @@
+@font-face {
+  font-family: 'Allura';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Allura Regular'), local('Allura-Regular'), url(https://fonts.gstatic.com/s/allura/v8/9oRPNYsQpS4zjuAPjA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v15/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQXME.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #a9a9a9;
+}
+h1.title {
+  margin-bottom: 20px;
+  color: #444444;
+  font-family: 'Allura', cursive;
+  text-transform: uppercase;
+  font-size: 38px;
+  letter-spacing: 5px;
+  word-spacing: 25px;
+}
+.contactus {
+  padding: 2% 10% 3%;
+  text-align: center;
+}
+.services,
+.ourgames {
+  padding: 2% 10% 3%;
+  text-align: center;
+  background: #f5f5f5;
+}
+.about {
+  padding: 2% 10% 3%;
+  text-align: center;
+  text-align: justify;
+}
+.about h1 {
+  text-align: center;
+}
+.arrow {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #48D1CC;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+.arrow:hover {
+  transform: scale(1.2);
+}
+.arrow img {
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+}
+.main_container {
+  position: relative;
+}
+@media (max-width: 680px) {
+  .logo {
+    margin-bottom: 25px;
+  }
+}
+.logo a {
+  font-family: 'Allura', cursive;
+  font-size: 42px;
+  color: #48D1CC;
+}
+.navbar {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  font-size: 18px;
+}
+@media (max-width: 680px) {
+  .navbar {
+    height: auto;
+    flex-direction: column;
+  }
+}
+@media (max-width: 680px) {
+  .navbar ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.navbar .navbar_items ul {
+  display: flex;
+}
+.navbar .navbar_items ul li {
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+@media (max-width: 680px) {
+  .navbar .navbar_items ul li {
+    margin-bottom: 12px;
+  }
+}
+.navbar .navbar_items ul li a {
+  color: #fff;
+}
+.navbar .navbar_items ul li a:hover {
+  color: #48D1CC;
+  border-bottom: 3px solid #fff;
+}
+.banner_image {
+  background: url("slike/pozadina4.jpg") no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+}
+.banner_content {
+  text-align: center;
+  color: #fff;
+  margin-top: 9%;
+}
+@media (max-width: 680px) {
+  .banner_content {
+    margin-top: 90%;
+    color: #48D1CC;
+  }
+}
+.banner_content h1 {
+  text-transform: uppercase;
+  line-height: 38px;
+  margin-bottom: 15px;
+}
+.banner_content h1 span {
+  color: #48D1CC;
+}
+.btn a,
+.btnbb a {
+  display: block;
+  width: 180px;
+  height: 35px;
+  color: #48D1CC;
+  border: 2px solid #48D1CC;
+  line-height: 35px;
+  margin: 25px auto 0;
+  text-align: center;
+  font-size: 18px;
+}
+.btn a:hover,
+.btnbb a:hover {
+  background-color: #48D1CC;
+  color: #fff;
+  cursor: default;
+}
+.diff_services {
+  display: flex;
+  margin-top: 35px;
+  justify-content: space-between;
+}
+@media (max-width: 680px) {
+  .diff_services {
+    flex-direction: column;
+  }
+}
+.diff_serviceitem {
+  width: 30%;
+}
+@media (max-width: 680px) {
+  .diff_serviceitem {
+    width: 100%;
+  }
+}
+.diff_serviceitem img {
+  width: 85%;
+  margin-bottom: 25px;
+  border-radius: 25%;
+}
+@media (max-width: 680px) {
+  .diff_serviceitem img {
+    width: 45%;
+  }
+}
+.diff_serviceitem h3 {
+  color: #48D1CC;
+  margin-bottom: 15px;
+  font-size: 23px;
+}
+.form_input {
+  margin-bottom: 15px;
+}
+.form_input textarea {
+  height: 80px;
+  resize: none;
+}
+.form_input input[type="text"],
+.form_input textarea,
+.form_input input[type="email"] {
+  width: 250px;
+  padding: 12px 20px;
+  border: 2px solid #ccc;
+}
+.form_input input[type="text"]:hover,
+.form_input textarea:hover,
+.form_input input[type="email"]:hover {
+  background: #ccc;
+  border-radius: 5px;
+}
+.btnbb a {
+  width: 250px;
+}
+.btnbb a:hover {
+  cursor: pointer;
+}
+.ourgames_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.ourgames_wrapper .games_g {
+  justify-content: space-between;
+  display: flex;
+}
+@media (max-width: 680px) {
+  .ourgames_wrapper .games_g {
+    flex-direction: column;
+  }
+}
+.ourgames_wrapper .games1 {
+  margin-bottom: 25px;
+}
+@media (max-width: 680px) {
+  .ourgames_wrapper .games1 {
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 680px) {
+  .ourgames_wrapper .games2 {
+    margin-bottom: 0px;
+  }
+}
+.ourgames_wrapper .game_img {
+  width: 30%;
+  height: auto;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 680px) {
+  .ourgames_wrapper .game_img {
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+.ourgames_wrapper .game_img img {
+  width: 100%;
+  display: block;
+  height: auto;
+  transition: all 0.7s ease;
+}
+@media (max-width: 680px) {
+  .ourgames_wrapper .game_img img {
+    width: 50%;
+  }
+}
+.ourgames_wrapper .game_img img:hover {
+  transform: scale(1.3);
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  background: #444444;
+  padding: 20px 0;
+}
+.footer a {
+  color: #fff;
+}
+
+/*# sourceMappingURL=stil.css.map */

@@ -1,0 +1,53 @@
+.main_container{
+	position: relative;
+}
+
+.logo{
+	@media (max-width: 680px){
+		margin-bottom: @ar25;
+		}
+	}
+
+.logo a{
+	font-family: @font2;
+	font-size: 42px;
+	color: 	@glavnaboja;
+}
+
+.navbar{
+	width: @sirina;
+	height: 65px;
+	display: flex;
+	justify-content: space-around;
+	align-items: @poravnanje;
+	position: absolute;
+	font-size: @vr20px - 2;
+	@media (max-width: 680px){
+		height: auto;
+		flex-direction: @column;
+	}
+	ul{
+	@media (max-width: 680px){
+		flex-direction: @column;
+		text-align: center;
+		}
+	}
+	.navbar_items ul {
+	display: flex;	
+		li{
+			text-transform: @txttran;
+			margin: 0 10px;
+			@media (max-width: 680px){
+				margin-bottom: 12px;
+				}
+				a{
+					color: @drugaboja;
+				&:hover{
+					color: @glavnaboja;
+					border-bottom: 3px solid @drugaboja;
+					}	
+				}
+			}	
+		}
+}
+
